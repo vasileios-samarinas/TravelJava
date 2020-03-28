@@ -7,12 +7,14 @@ public class FlightTest {
 
     private Flight flight;
     private Plane plane;
+    private Passenger passenger;
 
     @Before
     public void setUp(){
         plane=new Plane(PlaneType.AIRBUS_A319);
         flight= new Flight(plane,"FR756","22.00",
                 DestinationsType.GLA,DestinationsType.ATH);
+        passenger= new Passenger("Valia",1);
 
     }
 
@@ -25,5 +27,13 @@ public class FlightTest {
     public void canGetAvailableSeats(){
         assertEquals(144,flight.getAvailableSeats());
     }
+
+    @Test
+    public void canBookPassenger(){
+        flight.addPassenger(passenger);
+        assertEquals(1,flight.getNumberOfPassengers());
+    }
+
+
 
 }
