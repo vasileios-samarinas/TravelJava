@@ -32,5 +32,6 @@ public class Flight {
         if(this.getAvailableSeats()==0)
         {return;}
         passengers.add(passenger);
+        passenger.addFlight(this);
     }
 }

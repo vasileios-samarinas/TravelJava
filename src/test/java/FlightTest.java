@@ -32,15 +32,16 @@ public class FlightTest {
     public void canBookPassenger(){
         flight.addPassenger(passenger);
         assertEquals(1,flight.getNumberOfPassengers());
+        assertEquals(flight,passenger.getFlight());
     }
 
     @Test
     public void cannotBookPassenger(){
         Plane miniPlane= new Plane(PlaneType.MINI_PLANE);
-        Flight miniflight=new Flight(miniPlane,"AA0","12:00",DestinationsType.GLA,DestinationsType.ATH);
-        miniflight.addPassenger(passenger);
-        miniflight.addPassenger(passenger);
-        assertEquals(1, miniflight.getNumberOfPassengers());
+        Flight miniFlight=new Flight(miniPlane,"AA0","12:00",DestinationsType.GLA,DestinationsType.ATH);
+        miniFlight.addPassenger(passenger);
+        miniFlight.addPassenger(passenger);
+        assertEquals(1, miniFlight.getNumberOfPassengers());
     }
 
 
