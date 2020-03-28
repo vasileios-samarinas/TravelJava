@@ -29,6 +29,8 @@ public class Flight {
 
 
     public void addPassenger(Passenger passenger) {
+        if(this.getAvailableSeats()==0)
+        {return;}
         passengers.add(passenger);
     }
 }
