@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="04becf0c-d88d-4a36-a62c-ed8ce69f1a40" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlaneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlaneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Flight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FlightManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PlaneType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlaneType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FlightManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FlightManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,22 +44,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager" selected="JUnit.PlaneTest.getWeightForLuggagesPerFlight">
-    <configuration name="FlightTest.canBookPassenger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FlightManagerTest.getWeightPerPassengerForAFlight">
+    <configuration name="FlightManagerTest.getWeightPerPassengerForAFlight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TravelJava" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FlightTest" />
-      <option name="METHOD_NAME" value="canBookPassenger" />
+      <option name="MAIN_CLASS_NAME" value="FlightManagerTest" />
+      <option name="METHOD_NAME" value="getWeightPerPassengerForAFlight" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FlightTest.canGetAvailableSeats" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FlightTest.canBookPassenger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TravelJava" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FlightTest" />
-      <option name="METHOD_NAME" value="canGetAvailableSeats" />
+      <option name="METHOD_NAME" value="canBookPassenger" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,11 +97,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FlightManagerTest.getWeightPerPassengerForAFlight" />
         <item itemvalue="JUnit.PlaneTest.getWeightForLuggagesPerFlight" />
         <item itemvalue="JUnit.FlightTest.canBookPassenger" />
         <item itemvalue="JUnit.PassengerTest.setPassengerAddedToFlight" />
         <item itemvalue="JUnit.FlightTest.cannotBookPassenger" />
-        <item itemvalue="JUnit.FlightTest.canGetAvailableSeats" />
       </list>
     </recent_temporary>
   </component>
@@ -129,22 +131,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585416087322">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1585417209909">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585416087322" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585416087320">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1585417209909" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1585417209907">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585416087320" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585416087319">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1585417209907" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1585417209906">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585416087319" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585416087321">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1585417209906" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1585417209908">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585416087321" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1585417209908" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
