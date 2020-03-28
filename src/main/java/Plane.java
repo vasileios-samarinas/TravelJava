@@ -3,6 +3,7 @@ public class Plane {
     private PlaneType planeType;
 
 
+
     public Plane(PlaneType planeType) {this.planeType=planeType;}
 
 
@@ -15,4 +16,7 @@ public class Plane {
     }
 
 
+    public int getNetWeightForLuggages() {
+        return getWeight()/2;
+    }
 }

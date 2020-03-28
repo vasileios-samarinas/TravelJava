@@ -22,4 +22,9 @@ public class PlaneTest {
         assertEquals(75500,plane.getWeight());
     }
 
+    @Test
+    public void getWeightForLuggagesPerFlight(){
+        assertEquals(37750,plane.getNetWeightForLuggages());
+    }
+
 }
