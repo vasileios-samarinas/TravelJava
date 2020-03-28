@@ -24,6 +24,6 @@ public class Flight {
 
 
     public int getAvailableSeats() {
-        return this.plane.getCapacity();
+        return this.plane.getCapacity()-this.getNumberOfPassengers();
     }
 }
