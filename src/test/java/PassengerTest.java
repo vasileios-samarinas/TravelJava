@@ -24,5 +24,10 @@ public class PassengerTest {
         assertEquals(flight,passenger.getFlight());
     }
 
+    @Test
+    public void getTotalWeightOfLuggages(){
+        assertEquals(40,passenger.totalWeightOfLuggagesPerPerson());
+    }
+
 
 }
