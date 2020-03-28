@@ -37,4 +37,8 @@ public class Flight {
         passengers.add(passenger);
         passenger.addFlight(this);
     }
+
+    public ArrayList<Passenger> getAllPassengers(){
+        return this.passengers;
+    }
 }
