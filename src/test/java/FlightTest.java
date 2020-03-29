@@ -1,6 +1,9 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import static org.junit.Assert.assertEquals;
 
 public class FlightTest {
@@ -12,7 +15,7 @@ public class FlightTest {
     @Before
     public void setUp(){
         plane=new Plane(PlaneType.AIRBUS_A319);
-        flight= new Flight(plane,"FR756","22.00",
+        flight= new Flight(plane,"FR756", new Date(1585486972),
                 DestinationsType.GLA,DestinationsType.ATH);
         passenger= new Passenger("Valia",1);
 
@@ -38,7 +41,7 @@ public class FlightTest {
     @Test
     public void cannotBookPassenger(){
         Plane miniPlane= new Plane(PlaneType.MINI_PLANE);
-        Flight miniFlight=new Flight(miniPlane,"AA0","12:00",DestinationsType.GLA,DestinationsType.ATH);
+        Flight miniFlight=new Flight(miniPlane,"AA0",new Date( 1585486972),DestinationsType.GLA,DestinationsType.ATH);
         miniFlight.addPassenger(passenger);
         miniFlight.addPassenger(passenger);
         assertEquals(1, miniFlight.getNumberOfPassengers());
