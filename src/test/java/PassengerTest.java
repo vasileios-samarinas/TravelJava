@@ -4,6 +4,7 @@ import org.junit.Test;
 import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class PassengerTest {
 
@@ -29,6 +30,13 @@ public class PassengerTest {
     @Test
     public void getTotalWeightOfLuggages(){
         assertEquals(40,passenger.totalWeightOfLuggagesPerPerson());
+    }
+
+    @Test
+    public void assignSeatToPassenger(){
+        passenger.getSeat(plane.getCapacity());
+        boolean hasSeat=passenger.getSeatNumber()!= 0;
+        assertTrue(hasSeat);
     }
 
 
