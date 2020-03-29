@@ -21,4 +21,9 @@ public class FlightManager {
         }
         return totalWeight;
     }
+
+    public int weightReservedForBaggageRemaining(Flight flight) {
+        Plane plane=flight.getPlane();
+        return plane.getNetWeightForLuggages()-weightBookedByPassengerForFlight(flight);
+    }
 }

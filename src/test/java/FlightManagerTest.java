@@ -33,4 +33,13 @@ public class FlightManagerTest {
         assertEquals(120,flightManager.weightBookedByPassengerForFlight(flight));
     }
 
+    @Test
+    public void getWeightReservedForBaggageRemainsForAFlight(){
+        flight.addPassenger(passenger);
+        flight.addPassenger(passenger);
+        flight.addPassenger(passenger);
+        assertEquals(37630,flightManager.weightReservedForBaggageRemaining(flight));
+
+    }
+
 }
